@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(25, 20, 20);
+    box-sizing: border-box;
+}
+
+#header-container {
+    font-family: Proxima Nova;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 215, 97);
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 55px;
+    margin: 20px 30px 30px 0;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+#search-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    height: 100%;
+    border: 1px black solid;
+}
+
+input {
+    width: 250px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+select {
+    margin-right: 10px;
+}
+
+#submit-button {
+    border-radius: 3px;
+    border-radius: 15px;
+    width: 50px;
+}
+
+#results-container {
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#results-container .outer-div {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 220px;
+    width: 300px;
+}
+
+#results-container img {
+    /* display: inline-block; */
+    height: 200px;
+    width: 200px;
+}
+
+#results-container .results-name {
+    /* display: inline-block; */
+    width: 100px;
+    color: white;
+    justify-content: center;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+#more-button {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 40px auto;
+    visibility: hidden;
+}
+
+#more-button.on {
+    visibility: visible;
+}
+
+button:hover {
+    border: rgb(30, 215, 97) solid 3px;
+    font-weight: bold;
+}
+
+button,
+select {
+    outline: none;
+}
